@@ -38,13 +38,6 @@
         crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet">
 
-    <!-- arg0 JS -->
-    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
-
 </head>
 
 
@@ -158,9 +151,9 @@
         </div>
     </main>
 
-    <section>
-        <div class="container-fluid mt-5 pt-5 pb-5 mb-5">
-            <div class="row text-center">
+    <section class="Sec1 mt-5 pt-3">
+        <div class="container pb-5 mb-5">
+            <div class="row text-center mt-5 pt-3">
                 <div class="col-md-12">
                     <h2>Kredinizi Hesaplayın</h2>
                     <hr>
@@ -169,28 +162,194 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4 mt-5 pt-5">
-                    <a href="#"><div class="inclusive mt-3 d-block d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
+                <div class="col-md-6" id="topBlank">
+                    <a onclick="ShowCredit()"><div id="Sec0" class="inclusive mt-3 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
                         <img src="/assets/materials/svg/purse.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
                     <span class="ml-xl-4 ml-lg-4 my-auto"><h3>Kredi Hesaplama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                 </div></a>
 
-                <a href="#"><div class="inclusive mt-3 d-block d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
+                <a onclick="ShowDeposit()"><div id="Sec1" class="inclusive mt-4 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
                     <img src="/assets/materials/svg/cash-back.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
                 <span class="ml-xl-4 ml-lg-4 my-auto"><h3>Mevduat Hesaplama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
             </div></a>
 
-            <a href="#"><div class="inclusive mt-3 d-block d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
+            <a onclick="ShowUban()"><div id="Sec2" class="inclusive mt-4 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
                 <img src="/assets/materials/svg/search.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
             <span class="ml-xl-4 ml-lg-4 my-auto"><h3>UBAN Sorgulama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
         </div></a>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-md-5 mt-5 pt-5">
+                    <!-- CREDIT CALC START -->
+                    <form id="creditCalc" class="mt-xl-3 mt-lg-3 mt-md-3 mt-0 text-center text-xl-left text-lg-left text-md-left">
+                        <h2 class="mb-3 mt-xl-3 mt-md-3 mt-lg-3 mt-0">Kredi Hesaplama</h2>
+                        <hr class="ml-xl-0 ml-lg-0 mb-4">
+                        <div class="form-group">
+                            <label>Kredi Türü</label>
+                            <select required="required" class="form-control" name="select1" id="select1">
+                              <option class="d-none">Seçiniz</option>  
+                              <option value="1">İhtiyaç Kredisi</option>
+                              <option value="2">Konut Kredisi</option>
+                              <option value="3">Taşıt Kredisi</option>
+                              <option value="4">Kobi Kredisi</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Kredi</label>
+                            <select required="required" class="form-control" name="select2" id="select2">
+                              <option class="d-none">Seçiniz</option>
+                            </span>
+                            </select>
+                          </div>
+                          <div class="form-group" required>
+                          <label>Para Birimi</label><br/>
+                          <div class="form-check form-check-inline" name="select3" id="select3">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1">
+                            <label class="form-check-label label-koop">TL</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+                            <label class="form-check-label label-koop">EUR</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+                            <label class="form-check-label label-koop">USD</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2">
+                            <label class="form-check-label label-koop">GBP</label>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Vade Süresi</label>
+                            <select class="form-control" id="exampleFormControlSelect1" required>
+                              <option class="d-none">Seçiniz</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Kredi Tutarı<span class="ml-1" style="color: red;">*</span></label>
+                            <input type="credit-bounce" class="form-control" id="credit" placeholder="Kredi Tutarı (Gereklidir)" required>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                          <button type="button" class="btn btn-calc">Hesapla</button>
+                          <button type="button" class="btn btn-calc red">Temizle</button>
+                        </div>
+                    </form>
+                    <!-- CREDIT CALC END -->
+
+                    <!-- DEPOSIT CALC START -->
+                    <form id="depositCalc" class="mt-xl-3 mt-lg-3 mt-md-3 mt-0 text-center text-xl-left text-lg-left text-md-left d-none">
+                        <h2 class="mb-3 mt-xl-4 mt-md-4 mt-lg-4 mt-0">Mevduat Hesaplama</h2>
+                        <hr class="ml-xl-0 ml-lg-0 mb-4">
+                        <div class="form-group" required>
+                            <label>Kişi Türü</label><br/>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                              <label class="form-check-label label-koop">Gerçek Kişi</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label label-koop">Tüzel Kişi</label>
+                            </div>
+                          </div>
+                          <div class="form-group" required>
+                            <label for="exampleFormControlSelect1">Para Birimi</label><br/>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                              <label class="form-check-label label-koop" for="inlineRadio1">TRY</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                              <label class="form-check-label label-koop" for="inlineRadio2">USD</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label label-koop" for="inlineRadio2">GBP</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label label-koop" for="inlineRadio2">EUR</label>
+                              </div>
+                          </div>
+                          <div class="form-group">
+                            <label>Vade Süresi</label>
+                            <select class="form-control" required>
+                              <option class="d-none">Seçiniz</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label>Ana Para<span class="ml-1" style="color: red;">*</span></label>
+                            <input type="credit-bounce" class="form-control" id="credit" placeholder="Ana Para (Gereklidir)" required>
+                          </div>
+                          <div class="d-flex justify-content-between">
+                            <button type="button" class="btn btn-calc">Hesapla</button>
+                            <button type="button" class="btn btn-calc red">Temizle</button>
+                          </div>
+                    </form>
+                    <!-- DEPOSIT CALC END -->
+
+                    <!-- UBAN CHECKER / CALC START -->
+                    <form id="ubanCalc" class="mt-xl-3 mt-lg-3 mt-md-3 mt-0 text-center text-xl-left text-lg-left text-md-left d-none">
+                        <h2 class="mb-3 mt-xl-4 mt-md-4 mt-lg-4 mt-0">UBAN Sorgulama</h2>
+                        <hr class="ml-xl-0 ml-lg-0 mb-4">
+                        <div class="form-group">
+                            <label>Hesap Numarası<span class="ml-1" style="color: red;">*</span></label>
+                            <input type="credit-bounce" class="form-control" id="ubanChk" placeholder="__-___-__________" required>
+                          </div>
+                          <button type="button" class="btn btn-calc w-100">Hesapla</button>
+                          <h2 class="mb-3 mt-5">UBAN Hesaplama</h2>
+                          <hr class="ml-xl-0 ml-lg-0 mb-4">
+                          <div class="form-group">
+                            <label>UBAN Numarası<span class="ml-1" style="color: red;">*</span></label>
+                            <input type="credit-bounce" class="form-control" id="ubanClc" placeholder="CT__-____-____-____-____-____-____" required>
+                          </div>
+                          <button type="button" class="btn btn-calc w-100">Hesapla</button>
+                    </form>
+                    <!-- UBAN CHECKER / CALC END -->
                 </div>
             </div>
         </div>
     </section>
 
-
+    <section class="Sec2 mt-5 pt-3">
+        <div class="container">
+            <div class="row text-center mt-5 pt-3">
+                <div class="col-md-12">
+                    <h2>Kredinizi Sağladığımız İş Sahaları</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla blandit ex ut dictum facilisis.
+                        <br />Suspendisse fermentum sem metus, pretium ornare lacus venenatis nec.</p>
+                </div>
+            </div>
+            <div class="row text-center mt-5 pt-3">
+                <!-- TRIGGER JS UNDEFINED YET! YOU STAYED HERE-->
+                <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5" onmouseover="trigger()">
+                    <img src="/assets/materials/jpg/building.jpg" width="100%">
+                    <h2>Konut</h2>
+                </div>
+                <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
+                    <img src="/assets/materials/jpg/needed.jpg" width="100%">
+                    <h2>İhtiyaç</h2>
+                </div>
+                <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
+                    <img src="/assets/materials/jpg/car.jpg" width="100%">
+                    <h2>Taşıt</h2>
+                </div>
+                <div class="col-md-3">
+                    <img src="/assets/materials/jpg/health.jpg" width="100%">
+                    <h2>Sağlık</h2>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- arg0 JS -->
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 
 </html>
