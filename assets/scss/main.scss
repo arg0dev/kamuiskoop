@@ -1,11 +1,27 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     #topBlank {
         margin-top: 3em !important;
     }
+
+    #dskBlurb {
+        display: none !important;
+    }
+    #mBlurb {
+        display: block !important;
+    }
+    .screen {
+        padding-bottom: 0em !important;
+    } 
+
+    .item {
+        padding-bottom: 0em !important;
+    } 
+    
 }
 
 $green: #1C9754;
 $overlayGreen: rgba(28, 151, 83, 0.692);
+$overlayGreenNon0pacity: rgb(64, 175, 116);
 $darkGreen: #157541;
 $gray: #919191;
 $black: #000000;
@@ -17,6 +33,17 @@ $main: 14px;
 $h1: 30px;
 $h2: 20px;
 $h3: 16px;
+
+.item {
+    box-shadow: none;
+    outline: none;
+    padding-bottom: 5em;
+}
+
+.screen {
+    padding-top: 5em;
+    padding-bottom: 5em;
+} 
 
 .btn-koop {
     background-color: $green;
@@ -33,19 +60,38 @@ $h3: 16px;
         }
 }
 
+.btn-red {
+    background-color: transparent;
+    padding: 0.5em;
+    width: 48%;
+    color: $gray;
+    border-color: $gray;
+    outline: none !important;
+    box-shadow: none !important;
+    &:hover {
+        color: $white;
+        background-color: $red;
+        border-color: transparent;
+    }
+}
+
 .btn-calc {
     @extend .btn-koop;
     padding: 0.5em;
-    width: 48%
+    width: 48%;
 }
 
-.red {
+.btn-line {
+    @extend .btn-koop;
     background: transparent;
     border-color: $gray;
     color: $gray;
     &:hover {
-        color: $white;
-        background: $red;
+        background: $green;
+        border-color: transparent;
+    }
+    &:focus {
+        background: $green;
         border-color: transparent;
     }
 }
@@ -80,6 +126,10 @@ body {
         text-transform: uppercase;
         font-weight: 700;
     }
+}
+
+#mBlurb {
+    display: none;
 }
 
 
@@ -232,21 +282,127 @@ section {
         border-radius: 5px;
         filter: grayscale(1);
         transition: all 1s ease;
+        cursor: pointer;
         &:hover {
             filter: grayscale(0);
         }
     }
-    h2 {
-        &:nth-child(2) {
-            position: relative;
-            background: $overlayGreen;
+
+    #title0ne, #titleTw0, #titleThree, #titleFour {
+        transition: 1s ease all;
+    }
+
+
+    .press {
             color: $white;
-            padding: 1em 0em 1em 0em;
-            border-radius: 0px 0px 5px 5px ;
-            margin-top: -3.2em;
             font-weight: 400;
             font-size: 14px;
+            cursor: pointer;
         }
 
+    #flow {
+        transition: all 1s ease;
+    }
+
+    .overlay-green {
+        background: $overlayGreen;
+    }
+
+    .card-img-overlay {
+        transition: 1s ease all;
+        height: 25%;
+        margin-top: auto;
+    }
+}
+
+
+.Sec3 {
+    img {
+        border-radius: 5px;
+    }
+
+    .reSizer {
+        height: 30%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .press {
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    .dot {
+        color: $gray;
+    }
+
+    .slick {
+        position: relative;
+        span {
+            cursor: pointer;
+        }
+    }
+}
+
+.Sec4 {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.795)), url('/assets/materials/jpg/big_building.png') no-repeat top center;
+    background-size: cover;
+    color: $white;
+    padding: 10em 0em 10em 0em;
+    p {
+        color: $white;
+        font-weight: 300;
+    }
+}
+
+footer {
+    border-top: 5px solid $darkGreen;
+    background: $grayBG;
+    padding: 5em 0em 5em 0em;
+    h3 {
+        color: $gray;
+    }
+    p {
+        color: $gray;
+    }
+    i {
+        color: $gray;
+        &:hover {
+            color: $darkGreen;
+        }
+    }
+
+    a {
+        text-decoration: none !important; 
+        p {
+            &:hover {
+                text-decoration: underline;
+                color: $darkGreen;
+
+            }
+        }
+    }
+}
+
+.scrollTop {
+    i {
+        background: $green;
+        padding: 15px 20px 15px 20px;
+        font-size: 1.5em;
+        border-radius: 50em;
+        color: $white;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        cursor: pointer;
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.19);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.19);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.19);
+        &:hover {
+            background-color: $overlayGreenNon0pacity;
+        }
+        &:focus {
+            opacity: 0;
+        }
     }
 }

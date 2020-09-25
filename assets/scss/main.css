@@ -1,10 +1,34 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   #topBlank {
     margin-top: 3em !important;
   }
+  #dskBlurb {
+    display: none !important;
+  }
+  #mBlurb {
+    display: block !important;
+  }
+  .screen {
+    padding-bottom: 0em !important;
+  }
+  .item {
+    padding-bottom: 0em !important;
+  }
 }
 
-.btn-koop, .btn-calc {
+.item {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  padding-bottom: 5em;
+}
+
+.screen {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.btn-koop, .btn-calc, .btn-line {
   background-color: #1C9754;
   padding: 0.6em 1em 0.6em 1em;
   color: #ffffff;
@@ -13,13 +37,30 @@
           box-shadow: none !important;
 }
 
-.btn-koop:hover, .btn-calc:hover {
+.btn-koop:hover, .btn-calc:hover, .btn-line:hover {
   color: #ffffff;
   background-color: #157541;
 }
 
-.btn-koop:focus, .btn-calc:focus {
+.btn-koop:focus, .btn-calc:focus, .btn-line:focus {
   color: #ffffff;
+}
+
+.btn-red {
+  background-color: transparent;
+  padding: 0.5em;
+  width: 48%;
+  color: #919191;
+  border-color: #919191;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.btn-red:hover {
+  color: #ffffff;
+  background-color: #BE1111;
+  border-color: transparent;
 }
 
 .btn-calc {
@@ -27,15 +68,19 @@
   width: 48%;
 }
 
-.red {
+.btn-line {
   background: transparent;
   border-color: #919191;
   color: #919191;
 }
 
-.red:hover {
-  color: #ffffff;
-  background: #BE1111;
+.btn-line:hover {
+  background: #1C9754;
+  border-color: transparent;
+}
+
+.btn-line:focus {
+  background: #1C9754;
   border-color: transparent;
 }
 
@@ -72,6 +117,10 @@ body h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+#mBlurb {
+  display: none;
 }
 
 header {
@@ -234,6 +283,7 @@ section .CompVisible {
           filter: grayscale(1);
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
+  cursor: pointer;
 }
 
 .Sec2 img:hover {
@@ -241,14 +291,125 @@ section .CompVisible {
           filter: grayscale(0);
 }
 
-.Sec2 h2:nth-child(2) {
-  position: relative;
-  background: rgba(28, 151, 83, 0.692);
+.Sec2 #title0ne, .Sec2 #titleTw0, .Sec2 #titleThree, .Sec2 #titleFour {
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+}
+
+.Sec2 .press {
   color: #ffffff;
-  padding: 1em 0em 1em 0em;
-  border-radius: 0px 0px 5px 5px;
-  margin-top: -3.2em;
   font-weight: 400;
   font-size: 14px;
+  cursor: pointer;
+}
+
+.Sec2 #flow {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.Sec2 .overlay-green {
+  background: rgba(28, 151, 83, 0.692);
+}
+
+.Sec2 .card-img-overlay {
+  -webkit-transition: 1s ease all;
+  transition: 1s ease all;
+  height: 25%;
+  margin-top: auto;
+}
+
+.Sec3 img {
+  border-radius: 5px;
+}
+
+.Sec3 .reSizer {
+  height: 30%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Sec3 .press {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.Sec3 .dot {
+  color: #919191;
+}
+
+.Sec3 .slick {
+  position: relative;
+}
+
+.Sec3 .slick span {
+  cursor: pointer;
+}
+
+.Sec4 {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(1, 0, 0, 0.795))), url("/assets/materials/jpg/big_building.png") no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.795)), url("/assets/materials/jpg/big_building.png") no-repeat top center;
+  background-size: cover;
+  color: #ffffff;
+  padding: 10em 0em 10em 0em;
+}
+
+.Sec4 p {
+  color: #ffffff;
+  font-weight: 300;
+}
+
+footer {
+  border-top: 5px solid #157541;
+  background: #F4F4F4;
+  padding: 5em 0em 5em 0em;
+}
+
+footer h3 {
+  color: #919191;
+}
+
+footer p {
+  color: #919191;
+}
+
+footer i {
+  color: #919191;
+}
+
+footer i:hover {
+  color: #157541;
+}
+
+footer a {
+  text-decoration: none !important;
+}
+
+footer a p:hover {
+  text-decoration: underline;
+  color: #157541;
+}
+
+.scrollTop i {
+  background: #1C9754;
+  padding: 15px 20px 15px 20px;
+  font-size: 1.5em;
+  border-radius: 50em;
+  color: #ffffff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.19);
+}
+
+.scrollTop i:hover {
+  background-color: #40af74;
+}
+
+.scrollTop i:focus {
+  opacity: 0;
 }
 /*# sourceMappingURL=main.css.map */
