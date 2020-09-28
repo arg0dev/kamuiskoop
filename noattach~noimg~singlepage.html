@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kamu - İş Kalkınma Kooperatifi Ltd. Şti.</title>
+
+    <meta name="robots" content="noindex, nofollow" />
+
+    <!-- arg0 meta tags -->
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description" content="Lorem ipsum dolor sit amet">
+    <meta name="author" content="Barış Albayrak">
+    <meta name="theme-color" content="#1C9754">
+    <meta name="copyright" content="arg0dev">
+    <meta http-equiv="content-language" content="tr">
+    <link href='./assets/materials/opengraph/iskoop-fav.ico' rel='icon' type='image/x-icon' />
+
+
+    <!-- arg0 OpenGraph tags -->
+    <meta content='website' property='og:type' />
+    <meta content='Kamu - İş Kalkınma Kooperatifi Ltd. Şti.' property='og:title' />
+    <meta content='Kamu - İş Kalkınma Kooperatifi Ltd. Şti.' property='og:site_name' />
+    <meta content='Lorem ipsum dolor sit amet.' property='og:description' />
+    <meta content='DOMAIN GİRİLECEK' property='og:url' />
+    <meta content='./assets/materials/opengraph/' property='og:image' />
+    <link href='./assets/materials/opengraph/iskoop-180.png' rel='apple-touch-icon' sizes='180x180' />
+    <link href='./assets/materials/opengraph/iskoop-192.png' rel='icon' sizes='192x192' type='image/png' />
+    <link href='./assets/materials/opengraph/iskoop-32.png' rel='icon' sizes='32x32' type='image/png' />
+
+    <!-- arg0 CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/scss/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- LOGIN PANEL START -->
+    <div class="log1n" id="log1n">
+        <div class="closeBtn">
+            <button onclick="closeLogin()" type="button" class="btn btn-disClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="container">
+            <div class="row vh-100 align-content-center align-items-center">
+                <div class="col-md-12 mx-auto mb-5 text-center">
+                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" aria-describedby="emailHelp"
+                                placeholder="E-Posta">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Şifreniz</label>
+                            <input type="password" class="form-control custom-login" placeholder="Şifre">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                            SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
+                        <button type="submit" class="btn btn-koop w-100 mt-3">Giriş Yap</button>
+                        <small id="emailHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz?
+                            &nbsp; <a onclick="bridge()" href="#">Buradan</a> bize katılın.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LOGIN PANEL END -->
+
+    <!-- REGISTER PANEL START -->
+    <div class="reg1ster" id="reg1ster">
+        <div class="closeBtn">
+            <button onclick="closeRegister()" type="button" class="btn btn-disClose"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="container">
+            <div class="row vh-100 align-content-center align-items-center">
+                <div class="col-md-12 mx-auto mb-5 text-center">
+                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                </div>
+                <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Adınız Soyadınız</label>
+                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" aria-describedby="emailHelp"
+                                placeholder="E-Posta">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Şifreniz</label>
+                            <input type="password" class="form-control custom-login" placeholder="Şifre">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                            SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
+                        <button type="submit" class="btn btn-koop w-100 mt-3">Üye ol</button>
+                        <small id="emailHelp" class="form-text text-muted mt-3">Zaten bir Kamu-İş Kooperatifi hesabınız
+                            var mı?&nbsp; <a onclick="bridge()" href="#">Buradan</a> giriş yapın.</small>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- REGISTER PANEL END -->
+
+    <header class="inPage">
+        <!-- HIGH BAR START -->
+        <div class="navbar-switcher">
+            <div class="container-fluid pt-3 pb-3 topSec" id="topSec">
+                <div class="row">
+                    <div
+                        class="col-xl-10 col-lg-10 col-md-12 mx-auto d-xl-flex d-lg-flex d-md-flex text-center justify-content-between">
+                        <div class="cont pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3 d-none d-xl-block d-lg-block d-md-block">
+                            <a href="mailto:info@kamuis.org" class="mr-2"><i
+                                    class="fas fa-envelope mr-2"></i>info@kamuis.org</a>
+                            <a><i class="fas fa-phone-alt mr-2"></i>0(392) 227 02 24</a>
+                        </div>
+                        <div class="log pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3">
+                            <a href="#" class="mr-2"><i class="fas fa-university mr-2"></i>İnternet Bankacılığı</a>
+                            <a onclick="reg1ster()" class="mr-2"><i class="fas fa-user-plus mr-2"></i>Üye Ol</a>
+                            <a onclick="log1n()" class="mr-2"><i class="fas fa-sign-in-alt mr-2"></i>Giriş Yap</a>
+                            <a href="#"><img src="/assets/materials/jpg/lang/en_GB.png" width="24"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- HIGH BAR END -->
+            <hr>
+            <nav class="navbar navbar-expand-lg navbar-light" id="navReset">
+                <div class="col-xl-1 col-lg-1"></div>
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
+                <button onclick="koopToggler(this)" id="koop_onOff" value="undefined" class="navbar-toggler"
+                    type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr>
+                    <ul class="navbar-nav ml-auto text-xl-left text-lg-left text-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bireysel Bankacılık
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Krediler</a></li>
+                                <li><a class="dropdown-item" href="#">Mevduat & Kredi</a></li>
+                                <li><a class="dropdown-item" href="#">ATM'ler</a></li>
+                                <li><a class="dropdown-item" href="#">Sigorta</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Fatura Ödemeleri</a></li>
+                                <div class="dropdown-divider d-none lister"></div>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KIB-TEK</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Belediyeler</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Digiturk</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KKTCELL</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KKTC Telsim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
+                                <li><a class="dropdown-item" href="#">İlkelerimiz</a></li>
+                                <li><a class="dropdown-item" href="#">Şubelerimiz</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Yönetim</a></li>
+                                <div class="dropdown-divider lister d-none"></div>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Başkanın Mesajı</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Yönetim Kurulu</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kurumsal Kimlik</a></li>
+                                <li><a class="dropdown-item" href="#">Mali Raporlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Kredi Ön Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="#">Debit Kart Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="#">Üyelik Formu</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-1 col-lg-1"></div>
+            </nav>
+        </div>
+        <div class="container pt-5">
+            <div class="row pt-5 mt-xl-5 mt-lg-5 mt-md-5 mt-4">
+                <div class="col-md-6 pb-5 mb-5 mx-auto text-center">
+                    <h1>TARİHÇE / [SINGLE PAGE]</h1>
+                    <hr class="inPageHr">
+                    <div class="social mt-4">
+                        <a href="#" target="blank_"><i class="inPageIcon fab fa-twitter mr-2"></i></a>
+                        <a href="#" target="blank_"><i class="inPageIcon fab fa-facebook-f mr-2"></i></a>
+                        <a href="#" target="blank_"><i class="inPageIcon fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="inPageSec1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-justify">KKTC Kamu İşçileri Sendikası (Kamu-İş) Kurucu başkan Hüseyin Alasya
+                        başkanlığında 6 Aralık 1988’de kurulmuştur.<br/><br/>
+                        Kamu – İş kolay kurulmamıştır. O günün ideolojik sendikal şartlarında, Kamu – İş’in kurulmasının
+                        zorunlu bir ihtiyaç olduğuna inanan, bir grup arkadaş, kendi imkânları ile örgütlenme
+                        çalışmalarını başlatmıştır. KKTC sınırları dâhilinde, tüm işyerlerini dolaşılmış, görüş ve
+                        düşünceler anlatılmıştır. <br/><br/> Düşüncelere var olan destek ve güven tespit edildiği anda, örgütlenme
+                        başlamıştır. Bir yandan örgütlenirken, öte yandan yeni toplu iş sözleşmesi teklifleri
+                        hazırlanmıştır. Akabinde sendikalar mukayyitliğine, kamu – iş kurucu üyelerinin imzasıyla,
+                        tescil başvurusunda bulunulmuştur. 6 Aralık 1988 tarihinde, Kamu – İş’in kuruluşu resmen
+                        gerçekleşmiştir.
+
+                        Sendikanın tescili akabinde toplu iş sözleşmesi yetki talebi için ilgili mercilere başvurular
+                        yapılmıştır. Bu talep kabul edilerek devlette “toplu iş sözleşmesi” için yetkili sendika ilan
+                        edilmiştir.<br/><br/>
+                        Kısa bir süre sonra Kamu-İş 3580 üye ile en çok üyeye sahip sosyal sigortalar, ihtiyat sandığı
+                        ve asgari ücret saptama komisyonlarında söz sahibi bir sendika düzeyine gelmiştir.<br/><br/>
+
+                        Karşılaşılan engelleri aşmak için, Hür – İş (hür işçi sendikaları federasyonu)nun kurulmasına
+                        karar verilmiştir. Önce Kamu – İş ile İlk – Sen (ilkokul öğretmenler sendikası) olarak HÜR–İŞ’i
+                        oluşturulmuş ve tescil başvurusu sendikalar mukayyitliğince 7 Ekim 1993 tarihinde onaylanmıştır.
+                        Daha sonra DAÜ – PER – SEN Sendikası da HÜR–İŞ’e katılmıştır.
+
+                        HÜR–İŞ’in oluşumu ile, bir yandan ihtiyat sandığı, sosyal sigortalar ve asgari ücret
+                        komisyonlarında, temsiliyet hakkı doğmuştur.
+                        Öte yandan, uluslararası temsiliyet olanağı sağlanmıştır.<br/><br/>
+                        5 şubat 1994’de “Uluslararası Avrasya Metal İşçileri Federasyonu”nun kuruluşuna katılarak HÜR–İŞ
+                        olarak kurucu üyeler arasında yer almıştır.<br/><br/>
+
+                        1994’de, Kamu–İş olarak toplu sözleşme yetki referandumu büyük bir çoğunlukla kazanılmıştır.
+                        Akabinde HÜR–İŞ olarak, Türkiye İşçi Sendikaları Konfederasyonu (Türk–İş) üyeliği başvurusunda
+                        bulunulmuştur.<br/><br/>
+                        Büyük bir mücadele sonucunda, 13 Kasım 1995’de HÜR–İŞ’in üyeliği, Türk–İş genel kurulunda
+                        onaylanmıştır.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-md-3 mb-5 mb-xl-0 mb-lg-0 mb-md-0 text-center text-xl-left text-lg-left text-md-left">
+                    <img src="assets/materials/svg/logo-ct.svg" class="img-fluid">
+                </div>
+                <div class="col-md-2 mx-auto text-center text-xl-left text-lg-left text-md-left">
+                    <h3>İletişim</h3>
+                    <hr>
+                    <p class="mt-4">Şht. Şener Enver Sokak, No:23,Yenişehir Lefkoşa – KKTC</p>
+                    <p>0(392) 227 02 24 | 0(392) 228 05 97</p>
+                    <p>0(392) 228 24 56 | 0(392) 227 70 84</p>
+                </div>
+                <div class="col-1"></div>
+                <div
+                    class="col-md-2 mr-auto text-center text-xl-left text-lg-left text-md-left mt-5 mt-xl-0 mt-lg-0 mt-md-0">
+                    <h3>Kurumsal</h3>
+                    <hr>
+                    <a href="#" target="blank_">
+                        <p class="mt-4">Hakkımızda</p>
+                    </a>
+                    <a href="#" target="blank_">
+                        <p>Mevzuat</p>
+                    </a>
+                    <a href="#" target="blank_">
+                        <p>Haberler</p>
+                    </a>
+                </div>
+                <div class="col-md-3 text-center mt-5 mt-xl-0 mt-lg-0 mt-md-0">
+                    <a href="#" target="blank_"><i class="fab fa-twitter mr-2"></i></a>
+                    <a href="#" target="blank_"><i class="fab fa-facebook-f mr-2"></i></a>
+                    <a href="#" target="blank_"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scrollTop">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="#topSec" duration="1000" easing="smooth" scrollTo="topSec" class="scrollOnClick"
+                        id="topSec"><i class="fas fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- arg0 JS -->
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>

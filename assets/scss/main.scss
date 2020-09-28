@@ -34,6 +34,10 @@ $h1: 30px;
 $h2: 20px;
 $h3: 16px;
 
+a {
+    cursor: pointer;
+}
+
 .item {
     box-shadow: none;
     outline: none;
@@ -58,6 +62,60 @@ $h3: 16px;
        &:focus {
         color: $white;
         }
+}
+
+.btn-disClose {
+    background-color: transparent;
+    color: $green;
+    outline: none !important;
+    box-shadow: none !important;
+    font-size: 21px;
+    &:hover {
+        color: $black;
+        background-color: transparent;
+    }
+       &:focus {
+        color: black;
+        }
+}
+
+.log1n {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 9999 !important;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.938);
+    overflow: hidden;
+    padding-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease all;
+}
+
+.reg1ster {
+    @extend .log1n;
+}
+
+.closeBtn{
+    position: absolute;
+    right: 5%;
+}
+
+.custom-login {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid $green;
+    box-shadow: none !important;
+    outline: none !important;    a {
+        color: $darkGreen !important;
+    }
+    &:focus {
+        background: transparent;
+        border-bottom: solid 2px $darkGreen !important;
+    }
 }
 
 .btn-red {
@@ -108,6 +166,26 @@ $h3: 16px;
     color: $red;
 }
 
+.koop-nav-green {
+    transition: all ease 0.5s;
+    background: $green;
+    color: $white;
+    opacity: 0;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1 !important;
+    transition: 0.3s ease all;
+}
+
+#navReset {
+    margin-top: -1em;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: $main;
@@ -132,12 +210,55 @@ body {
     display: none;
 }
 
+.inPage {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/buildCover.jpg') no-repeat top center !important;
+    color: white;
+    min-height: 75vh !important;
+    .inPageHr {
+        width: 50px;
+        border: 2px solid $green ;
+        background: $green;
+        opacity: 1;
+    }
+
+    .inPageIcon {
+        color: $white;
+        border: solid 1px $white;
+        height: 30px;
+        width: 30px;
+        padding-top: 0.5em;
+        transition: 0.5s ease all;
+        &:hover {
+            background: $green;
+            color: $white;
+            border-color: $green;
+        }
+    }
+}
+
+.inPageSec1 {
+    padding: 5em 0em 5em 0em;
+    span {
+        color: $gray;
+    }
+
+    a {
+        color: $green;
+        text-decoration: underline !important;
+    }
+    .StandartHr {
+        width: 100% !important;
+        border: 1px solid $gray !important;
+        background: $gray;
+        opacity: 0.1 !important;
+    }
+}
 
 header{
-    color: $white;
-    background: linear-gradient(rgba(0, 0, 0, 0.11), rgba(0,0,0,.7)), url('/assets/materials/jpg/header.png') no-repeat top center;
-    background-size: cover;
     min-height: 100vh;
+    color: $white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/header.png') no-repeat top center;
+    background-size: cover;
     hr {
         background: $white;
         opacity: 0.2;
@@ -153,11 +274,28 @@ header{
     }
 
     
-    .line {
+    .line1, .line2, .line3 {
         width: 30px;
         height: 2px;
         background-color: $white;
         margin: 5px 0;
+        transition: all ease 0.5s;
+    }
+
+    .lineT .line1 {
+        transform: rotate(-45deg);
+        transition: all ease 0.5s;
+    }
+
+    .lineT .line2 {
+        opacity: 0;
+        transition: all ease 0.5s;
+    }
+
+    .lineT .line3 {
+        transform: rotate(45deg);
+        margin-top: -0.7em;
+        transition: all ease 0.5s;
     }
 
     .navbar-light .navbar-toggler {
@@ -169,6 +307,7 @@ header{
 
     .topSec {
         a {
+            font-size: 12px;
             color: $white !important;
             text-decoration: none;
             &:hover {
@@ -196,6 +335,77 @@ header{
         opacity: 0.3;
     }
 }
+
+.list-2 {
+    cursor: pointer;
+}
+
+.nav-link {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    padding-right: 15px !important;
+    border-radius: 0px 0px 5px 5px;
+    background: #1c9754;
+    color: #fff !important;
+    border: 0px;
+    -webkit-box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.1);
+    margin-bottom: 1.5em;
+}
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #ffffff !important;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent !important;
+    border: 0;
+    font-size: 14px;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.dropdown-divider {
+    margin-left: 15px;
+    border-color: #e9ecef2b;
+}
+
+.dropdown-submenu {
+    position: relative;
+  }
+  
+  .dropdown-submenu a::after {
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 6px;
+    top: .8em;
+  }
+  
+  .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 1rem !important;
+    margin-right: .1rem;
+  }
 
 main {
     background: $grayBG;
@@ -345,7 +555,7 @@ section {
 }
 
 .Sec4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.795)), url('/assets/materials/jpg/big_building.png') no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url('/assets/materials/jpg/buildCover.jpg') no-repeat top center;
     background-size: cover;
     color: $white;
     padding: 10em 0em 10em 0em;
@@ -356,7 +566,6 @@ section {
 }
 
 footer {
-    border-top: 5px solid $darkGreen;
     background: $grayBG;
     padding: 5em 0em 5em 0em;
     h3 {
@@ -385,6 +594,8 @@ footer {
 }
 
 .scrollTop {
+    opacity: 0;
+    transition: all ease 0.5s;
     i {
         background: $green;
         padding: 15px 20px 15px 20px;
@@ -400,9 +611,6 @@ footer {
         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.19);
         &:hover {
             background-color: $overlayGreenNon0pacity;
-        }
-        &:focus {
-            opacity: 0;
         }
     }
 }

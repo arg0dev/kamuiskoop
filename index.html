@@ -43,56 +43,171 @@
 
 
 <body>
+    <!-- LOGIN PANEL START -->
+    <div class="log1n" id="log1n">
+        <div class="closeBtn">
+            <button onclick="closeLogin()" type="button" class="btn btn-disClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="container">
+            <div class="row vh-100 align-content-center align-items-center">
+                <div class="col-md-12 mx-auto mb-5 text-center">
+                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                </div> 
+                <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login"
+                                aria-describedby="emailHelp" placeholder="E-Posta">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Şifreniz</label>
+                            <input type="password" class="form-control custom-login"
+                                placeholder="Şifre">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                            SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
+                        <button type="submit" class="btn btn-koop w-100 mt-3">Giriş Yap</button>
+                        <small id="emailHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz? &nbsp; <a onclick="bridge()" href="#">Buradan</a> bize katılın.</small>
+                    </form>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- LOGIN PANEL END -->
+
+    <!-- REGISTER PANEL START -->
+    <div class="reg1ster" id="reg1ster">
+        <div class="closeBtn">
+            <button onclick="closeRegister()" type="button" class="btn btn-disClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="container">
+            <div class="row vh-100 align-content-center align-items-center">
+                <div class="col-md-12 mx-auto mb-5 text-center">
+                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                </div> 
+                <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Adınız Soyadınız</label>
+                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login"
+                                aria-describedby="emailHelp" placeholder="E-Posta">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Şifreniz</label>
+                            <input type="password" class="form-control custom-login"
+                                placeholder="Şifre">
+                        </div>
+                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                            SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
+                        <button type="submit" class="btn btn-koop w-100 mt-3">Üye ol</button>
+                        <small id="emailHelp" class="form-text text-muted mt-3">Zaten bir Kamu-İş Kooperatifi hesabınız var mı?&nbsp; <a onclick="bridge()" href="#">Buradan</a> giriş yapın.</small>
+                    </form>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- REGISTER PANEL END -->
+
     <header>
         <!-- HIGH BAR START -->
-        <div class="container-fluid pt-3 pb-3 topSec">
-            <div class="row">
-                <div
-                    class="col-xl-10 col-lg-10 col-md-12 mx-auto d-xl-flex d-lg-flex d-md-flex text-center justify-content-between">
-                    <div class="pb-3 pb-xl-0 pb-lg-0 pb-md-0 pt-3">
-                        <a href="mailto:info@kamuis.org" class="mr-2"><i
-                                class="fas fa-envelope mr-2"></i>info@kamuis.org</a>
-                        <a><i class="fas fa-phone-alt mr-2"></i>0(392) 227 02 24</a>
-                    </div>
-                    <div class="pb-2 pb-xl-0 pb-lg-0 pb-md-0 pt-3">
-                        <a href="#" class="mr-2"><i class="fas fa-university mr-2"></i>İnternet Bankacılığı</a>
-                        <a href="#" class="mr-2">Üye Ol</a>
-                        <a href="#" class="mr-2"><i class="fas fa-sign-in-alt mr-2"></i>Giriş Yap</a>
-                        <a href="#"><img src="/assets/materials/jpg/lang/en_GB.png" width="24"></a>
+        <div class="navbar-switcher">
+            <div class="container-fluid pt-3 pb-3 topSec" id="topSec">
+                <div class="row">
+                    <div
+                        class="col-xl-10 col-lg-10 col-md-12 mx-auto d-xl-flex d-lg-flex d-md-flex text-center justify-content-between">
+                        <div class="cont pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3 d-none d-xl-block d-lg-block d-md-block">
+                            <a href="mailto:info@kamuis.org" class="mr-2"><i
+                                    class="fas fa-envelope mr-2"></i>info@kamuis.org</a>
+                            <a><i class="fas fa-phone-alt mr-2"></i>0(392) 227 02 24</a>
+                        </div>
+                        <div class="log pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3">
+                            <a href="#" class="mr-2"><i class="fas fa-university mr-2"></i>İnternet Bankacılığı</a>
+                            <a onclick="reg1ster()" class="mr-2"><i class="fas fa-user-plus mr-2"></i>Üye Ol</a>
+                            <a onclick="log1n()" class="mr-2"><i class="fas fa-sign-in-alt mr-2"></i>Giriş Yap</a>
+                            <a href="#"><img src="/assets/materials/jpg/lang/en_GB.png" width="24"></a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- HIGH BAR END -->
+            <hr>
+            <nav class="navbar navbar-expand-lg navbar-light" id="navReset">
+                <div class="col-xl-1 col-lg-1"></div>
+                <a class="navbar-brand" href="#">
+                    <img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
+                <button onclick="koopToggler(this)" id="koop_onOff" value="undefined" class="navbar-toggler"
+                    type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <hr>
+                    <ul class="navbar-nav ml-auto text-xl-left text-lg-left text-center">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Bireysel Bankacılık
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Krediler</a></li>
+                                <li><a class="dropdown-item" href="#">Mevduat & Kredi</a></li>
+                                <li><a class="dropdown-item" href="#">ATM'ler</a></li>
+                                <li><a class="dropdown-item" href="#">Sigorta</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Fatura Ödemeleri</a></li>
+                                <div class="dropdown-divider d-none lister"></div>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KIB-TEK</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Belediyeler</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Digiturk</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KKTCELL</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">KKTC Telsim</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
+                                <li><a class="dropdown-item" href="#">İlkelerimiz</a></li>
+                                <li><a class="dropdown-item" href="#">Şubelerimiz</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Yönetim</a></li>
+                                <div class="dropdown-divider lister d-none"></div>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Başkanın Mesajı</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="#">Yönetim Kurulu</a></li>
+                                <div class="dropdown-divider"></div>
+                                <li><a class="dropdown-item" href="#">Kurumsal Kimlik</a></li>
+                                <li><a class="dropdown-item" href="#">Mali Raporlar</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Kredi Ön Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="#">Debit Kart Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="#">Üyelik Formu</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-1 col-lg-1"></div>
+            </nav>
         </div>
-        <!-- HIGH BAR END -->
-        <hr>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="col-xl-1 col-lg-1"></div>
-            <a class="navbar-brand" href="#">
-                <img src="/assets/materials/svg/logo-wt.svg" width="110%"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link active" href="#">Bireysel Bankacılık</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Haberler</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hakkımızda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">İletişim</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xl-1 col-lg-1"></div>
-        </nav>
         <div class="container pt-5">
             <div class="row pt-5 mt-5">
                 <div class="col-md-6 pb-5 mb-5">
@@ -220,23 +335,19 @@
                         <div class="form-group" required>
                             <label>Para Birimi</label><br />
                             <div class="form-check form-check-inline" name="select3" id="select3">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio1">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">TL</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio2">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">EUR</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio2">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">USD</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                    id="inlineRadio2">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">GBP</label>
                             </div>
                         </div>
@@ -248,7 +359,7 @@
                         </div>
                         <div class="form-group">
                             <label>Kredi Tutarı<span class="ml-1" style="color: red;">*</span></label>
-                            <input type="credit-bounce" class="form-control" id="credit"
+                            <input type="credit-bounce" class="form-control"
                                 placeholder="Kredi Tutarı (Gereklidir)" required>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -266,37 +377,31 @@
                         <div class="form-group" required>
                             <label>Kişi Türü</label><br />
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">Gerçek Kişi</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
+                                <input class="form-check-input" type="radio">
                                 <label class="form-check-label label-koop">Tüzel Kişi</label>
                             </div>
                         </div>
                         <div class="form-group" required>
                             <label for="exampleFormControlSelect1">Para Birimi</label><br />
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
-                                    value="option1">
-                                <label class="form-check-label label-koop" for="inlineRadio1">TRY</label>
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label label-koop">TRY</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label label-koop" for="inlineRadio2">USD</label>
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label label-koop">USD</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label label-koop" for="inlineRadio2">GBP</label>
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label label-koop">GBP</label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
-                                    value="option2">
-                                <label class="form-check-label label-koop" for="inlineRadio2">EUR</label>
+                                <input class="form-check-input" type="radio">
+                                <label class="form-check-label label-koop">EUR</label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -307,7 +412,7 @@
                         </div>
                         <div class="form-group">
                             <label>Ana Para<span class="ml-1" style="color: red;">*</span></label>
-                            <input type="credit-bounce" class="form-control" id="credit"
+                            <input type="credit-bounce" class="form-control"
                                 placeholder="Ana Para (Gereklidir)" required>
                         </div>
                         <div class="d-flex justify-content-between">
@@ -354,7 +459,6 @@
                 </div>
             </div>
             <div class="row text-center mt-5 pt-3">
-                <!-- TRIGGER JS UNDEFINED YET! YOU STAYED HERE-->
                 <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
                     <div class="card">
                         <img class="card-img" src="/assets/materials/jpg/building.jpg" alt="Sheep 9">
@@ -556,12 +660,19 @@
                     <p>0(392) 228 24 56 | 0(392) 227 70 84</p>
                 </div>
                 <div class="col-1"></div>
-                <div class="col-md-2 mr-auto text-center text-xl-left text-lg-left text-md-left mt-5 mt-xl-0 mt-lg-0 mt-md-0">
+                <div
+                    class="col-md-2 mr-auto text-center text-xl-left text-lg-left text-md-left mt-5 mt-xl-0 mt-lg-0 mt-md-0">
                     <h3>Kurumsal</h3>
                     <hr>
-                    <a href="#" target="blank_"><p class="mt-4">Hakkımızda</p></a>
-                    <a href="#" target="blank_"><p>Mevzuat</p></a>
-                    <a href="#" target="blank_"><p>Haberler</p></a>
+                    <a href="#" target="blank_">
+                        <p class="mt-4">Hakkımızda</p>
+                    </a>
+                    <a href="#" target="blank_">
+                        <p>Mevzuat</p>
+                    </a>
+                    <a href="#" target="blank_">
+                        <p>Haberler</p>
+                    </a>
                 </div>
                 <div class="col-md-3 text-center mt-5 mt-xl-0 mt-lg-0 mt-md-0">
                     <a href="#" target="blank_"><i class="fab fa-twitter mr-2"></i></a>
@@ -576,7 +687,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <i class="fas fa-angle-up"></i>
+                    <a href="#topSec" duration="1000" easing="smooth" scrollTo="topSec" class="scrollOnClick"
+                        id="topSec"><i class="fas fa-angle-up"></i></a>
                 </div>
             </div>
         </div>
