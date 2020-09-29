@@ -16,6 +16,10 @@
     .item {
         padding-bottom: 0em !important;
     } 
+
+    iframe {
+        min-height: 50vh !important;
+    }
     
 }
 
@@ -29,10 +33,28 @@ $white: #ffffff;
 $red: #BE1111;
 $grayBG: #F4F4F4;
 $inclusive: #e0e0e0;
+$standart: #ced4da;
+$placeholder: #495057;
+$border: #EFEFEF;
 $main: 14px;
 $h1: 30px;
 $h2: 20px;
 $h3: 16px;
+
+::selection {
+    background-color: $green;
+    color: $white;
+}
+
+::-moz-selection {
+    background-color: $green;
+    color: $white;  
+}
+
+::-webkit-selection {
+    background-color: $green;
+    color: $white;  
+}
 
 a {
     cursor: pointer;
@@ -48,6 +70,10 @@ a {
     padding-top: 5em;
     padding-bottom: 5em;
 } 
+
+button {
+    font-size: 15px !important;
+}
 
 .btn-koop {
     background-color: $green;
@@ -109,18 +135,83 @@ a {
     border-radius: 0px;
     border-bottom: 1px solid $green;
     box-shadow: none !important;
-    outline: none !important;    a {
+    outline: none !important;  
+    resize: none; 
+    &:focus {
+        border-bottom: solid 2px $darkGreen !important;
+        background: none !important;
+    }
+    &::placeholder {
+        opacity: 0.5;
+    }
+    a {
         color: $darkGreen !important;
     }
-    &:focus {
+    &:focus + .input-group-koop {
+        border-bottom: solid 2px $darkGreen;
         background: transparent;
-        border-bottom: solid 2px $darkGreen !important;
     }
+}
+
+.dropKoop {
+    background-position: bottom 8px right 10px;
+    box-shadow: none !important;
+    outline: none !important;
+    font-size: 15px;
+    &:focus {
+        border-color: $standart;
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.inputKoop {
+    padding: 0.5em;
+    box-shadow: none !important;
+    outline: none !important;
+    border: solid 1px $standart;
+    border-radius: 5px;
+    &::placeholder {
+        opacity: 1;
+        color: $placeholder;
+        padding-left: 0.4em;
+    }
+}
+
+.input-group-koop {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid $green;
+}
+
+.input-group-text {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    opacity: 0.2;
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    filter: grayscale(1);
+    padding: 1em;
+    border: solid 2px $grayBG !important;
 }
 
 .btn-red {
     background-color: transparent;
-    padding: 0.5em;
+    padding: 0.6em 1em 0.6em 1em;
     width: 48%;
     color: $gray;
     border-color: $gray;
@@ -179,7 +270,7 @@ a {
 .visible {
     visibility: visible;
     opacity: 1 !important;
-    transition: 0.3s ease all;
+    transition: 0.5s ease all;
 }
 
 #navReset {
@@ -214,6 +305,7 @@ body {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/buildCover.jpg') no-repeat top center !important;
     color: white;
     min-height: 75vh !important;
+    padding-bottom: 2.5em;
     .inPageHr {
         width: 50px;
         border: 2px solid $green ;
@@ -237,6 +329,14 @@ body {
 }
 
 .inPageSec1 {
+    .cropMask {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 5px;
+        
+    }
     padding: 5em 0em 5em 0em;
     span {
         color: $gray;
@@ -252,12 +352,28 @@ body {
         background: $gray;
         opacity: 0.1 !important;
     }
+    img {
+        padding: 1em !important;
+        border: solid 2px $grayBG !important;
+        border-radius: 5px;
+    }
+
+    .rightSideForm {
+        background: $grayBG;
+        padding: 1em;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 150px;
+        border-radius: 5px;
+        padding-top: 2em;
+        border: solid 3px $border;
+    }
 }
 
 header{
     min-height: 100vh;
     color: $white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/header.png') no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/header.jpg') no-repeat top center;
     background-size: cover;
     hr {
         background: $white;
@@ -294,7 +410,7 @@ header{
 
     .lineT .line3 {
         transform: rotate(45deg);
-        margin-top: -0.7em;
+        margin-top: -0.94em;
         transition: all ease 0.5s;
     }
 
@@ -346,8 +462,8 @@ header{
 }
 
 .dropdown-menu {
-    padding-right: 15px !important;
-    border-radius: 0px 0px 5px 5px;
+    padding-right: 35px !important;
+    border-radius: 0px 5px 5px 5px;
     background: #1c9754;
     color: #fff !important;
     border: 0px;
@@ -355,6 +471,17 @@ header{
     -moz-box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 5px 2px 0px rgba(0,0,0,0.1);
     margin-bottom: 1.5em;
+    margin-top: 0;
+}
+
+.navbar-light .navbar-nav .show>.nav-link {
+    background: #1c9754;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.dropdown-toggle::after {
+    display: none;
 }
 
 
@@ -478,6 +605,10 @@ section {
         background: $green;
         color: $white;
         border: solid 1px transparent;
+        &:hover {
+            background: $green !important;
+            color: $white !important;
+        }
     }
 
     .CompVisible {

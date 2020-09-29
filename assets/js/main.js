@@ -176,7 +176,7 @@ $(document).ready
 
 $(function () {
     $(window).on('scroll', function () {
-        if ( $(window).scrollTop() > 200 ) {
+        if ( $(window).scrollTop() > 100 ) {
 			$('.navbar-switcher').addClass('koop-nav-green');
 			$('.navbar-switcher').addClass('fixed-top');
 			$('.navbar-switcher').addClass('visible');
@@ -246,6 +246,12 @@ $(function () {
     x.classList.toggle("lineT");
   }
 
+function numberReturn(evt){
+    var charCode = (evt.which) ? evt.which : event.keyCode
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+    return true;
+}    
 
 
   //smoothScroll-Es5.js #START

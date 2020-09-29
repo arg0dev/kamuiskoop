@@ -54,18 +54,18 @@
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
-                            <input type="email" class="form-control custom-login" aria-describedby="emailHelp"
-                                placeholder="E-Posta">
+                            <label>E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" placeholder="E-Posta" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Şifreniz</label>
-                            <input type="password" class="form-control custom-login" placeholder="Şifre">
+                            <input type="password" class="form-control custom-login" aria-describedby="pwHelp"
+                                placeholder="Şifre" required>
                         </div>
                         <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
                             SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
                         <button type="submit" class="btn btn-koop w-100 mt-3">Giriş Yap</button>
-                        <small id="emailHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz?
+                        <small id="pwHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz?
                             &nbsp; <a onclick="bridge()" href="#">Buradan</a> bize katılın.</small>
                     </form>
                 </div>
@@ -88,19 +88,19 @@
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Adınız Soyadınız</label>
-                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad">
+                            <label>Adınız Soyadınız</label>
+                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
-                            <input type="email" class="form-control custom-login" aria-describedby="emailHelp"
-                                placeholder="E-Posta">
+                            <label>E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" placeholder="E-Posta" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Şifreniz</label>
-                            <input type="password" class="form-control custom-login" placeholder="Şifre">
+                            <label>Şifreniz</label>
+                            <input type="password" class="form-control custom-login" aria-describedby="pwHelp"
+                                placeholder="Şifre" required>
                         </div>
-                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                        <small id="pwHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
                             SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
                         <button type="submit" class="btn btn-koop w-100 mt-3">Üye ol</button>
                         <small id="emailHelp" class="form-text text-muted mt-3">Zaten bir Kamu-İş Kooperatifi hesabınız
@@ -138,7 +138,7 @@
             <nav class="navbar navbar-expand-lg navbar-light" id="navReset">
                 <div class="col-xl-1 col-lg-1"></div>
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
+                    <a href="/index.html"><img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
                 <button onclick="koopToggler(this)" id="koop_onOff" value="undefined" class="navbar-toggler"
                     type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -150,9 +150,9 @@
                     <hr>
                     <ul class="navbar-nav ml-auto text-xl-left text-lg-left text-center">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Bireysel Bankacılık
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Bireysel Bankacılık<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Krediler</a></li>
@@ -170,9 +170,9 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hakkımızda
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Tarihçe</a></li>
@@ -191,7 +191,8 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
-                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span>
+                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span><i
+                                    class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Kredi Ön Başvurusu</a></li>
@@ -209,7 +210,7 @@
         </div>
         <div class="container pt-5">
             <div class="row pt-5 mt-xl-5 mt-lg-5 mt-md-5 mt-4">
-                <div class="col-md-6 pb-5 mb-5 mx-auto text-center">
+                <div class="col-md-8 pb-5 mb-5 mt-5 mx-auto text-center">
                     <h1>BAŞKANIN MESAJI</h1>
                     <hr class="inPageHr">
                     <div class="social mt-4">
@@ -229,45 +230,52 @@
                     <img src="/assets/materials/jpg/DCIM/president.jpg" class="img-fluid mb-5">
                 </div>
                 <div class="col-md-8">
-                    <p class="text-justify">Artık birlikteliğimizi internet ortamında da paylaşıyoruz. Kurumların hatta devletlerin
+                    <p class="text-justify">Artık birlikteliğimizi internet ortamında da paylaşıyoruz. Kurumların hatta
+                        devletlerin
                         elektronikleştiği bir çağda Sendikamız KAMU-İŞ’i teknolojik donanım açısından eksiksiz hale
                         getirme yönündeki kararlığımızın gereği olarak Haziran 2019’dan beri kesintisiz yayındayız.
                         Sendikamız KAMU-İŞ’i kurumsallaşmanın bir gereği olan, elektronik ağla örme yönündeki
                         çabalarımız tüm hızıyla devam etmektedir. Uzun vadede hedefimiz Genel Merkez ve Gazi Mağusa
-                        Şubemiz’de otomasyon sistemine geçebilmek ve elektronik ağ yoluyla tüm üyelerimize ulaşmaktır.<br/><br/>
+                        Şubemiz’de otomasyon sistemine geçebilmek ve elektronik ağ yoluyla tüm üyelerimize
+                        ulaşmaktır.<br /><br />
 
                         İnternet ortamımız, Kamu - İŞ’lilerin haberleşmesini üye bilgileri ve yaptığımız Toplu İş
                         Sözleşmelerini, anlaşmalı tüm Otel, Hastane, Eczane ve işyerlerine ulaşmayı çok daha pratik hale
                         getirmiş durumdadır. Sendikamız internet sayfası sayesinde iletişimimiz sadece yurt içiyle
-                        sınırlı kalmamış, dünya geneline yayılmıştır.<br/><br/>
+                        sınırlı kalmamış, dünya geneline yayılmıştır.<br /><br />
 
                         İnternet sayfamızla, dünyanın her neresinde olursa olsun bizimle iletişime geçmek isteyen
                         üyelerimize bir klavye kadar yakınız.
                         İnternet sayfamızla, elektronik postalarımıza gelen soru, talep ve önerilere hızlıca yanıt
                         vermekle farklılığımız ortaya koyacağız.
-                        Hızlı iletişim konusuna bundan sonra da büyük hassasiyet göstereceğiz.<br/><br/>
+                        Hızlı iletişim konusuna bundan sonra da büyük hassasiyet göstereceğiz.<br /><br />
 
                         Şimdi sizlere çok daha yakınız. Aklınızdan geçenleri buraya not düşmeyi ve bize göndermeyi
                         unutmayın. Cevapsız kalmayacağından emin olabilirsiniz.
 
                         Geçmişe takılıp kalmanın hiçbir anlamı yok, birlikte gelecek güzel günlerin çalışmalarını
                         yapalım ve hayata geçirelim.
-                        İnternet sayfamıza ilgi gösteren tüm Kamu-İş’lilere ve kamuoyuna şimdiden teşekkür ediyorum.<br/><br/>
+                        İnternet sayfamıza ilgi gösteren tüm Kamu-İş’lilere ve kamuoyuna şimdiden teşekkür
+                        ediyorum.<br /><br />
 
-                        Genel Başkan<br/>
+                        Genel Başkan<br />
                         <b>Ahmet SERDAROĞLU</b></p>
                 </div>
             </div>
             <hr class="StandartHr">
             <div class="row">
-                <div class="col-12 col-xl-3 col-lg-3 col-md-4 text-center text-xl-left text-lg-left text-md-left mb-4 mb-xl-0 mb-lg-0 mb-md-0">
-                    <button type="button" class="btn btn-line w-100">Dökümanı İndir<i class="ml-3 far fa-file"></i></button>
+                <div
+                    class="col-12 col-xl-3 col-lg-3 col-md-4 text-center text-xl-left text-lg-left text-md-left mb-4 mb-xl-0 mb-lg-0 mb-md-0">
+                    <button type="button" class="btn btn-line w-100 d-flex justify-content-between">Dökümanı İndir<i
+                            class="ml-3 my-auto far fa-file"></i></button>
                 </div>
-                <div class="col-12 col-xl-9 col-lg-9 col-md-8 my-auto text-center text-xl-right text-lg-right text-md-right">
-                    <span class="my-auto"><span class="mr-2">Sonraki Sayfa<i class="ml-2 fas fa-long-arrow-alt-right"></i></span><a href="#" name="Sonraki Sayfa">Yönetim Kurulu</a></span> 
+                <div
+                    class="col-12 col-xl-9 col-lg-9 col-md-8 my-auto text-center text-xl-right text-lg-right text-md-right">
+                    <span class="my-auto"><span class="mr-2">Sonraki Sayfa<i
+                                class="ml-2 fas fa-long-arrow-alt-right"></i></span><a href="#"
+                            name="Sonraki Sayfa">Yönetim Kurulu</a></span>
                 </div>
-                    
-                </div>
+
             </div>
         </div>
     </section>

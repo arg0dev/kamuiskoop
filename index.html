@@ -52,64 +52,65 @@
             <div class="row vh-100 align-content-center align-items-center">
                 <div class="col-md-12 mx-auto mb-5 text-center">
                     <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
-                </div> 
+                </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
-                            <input type="email" class="form-control custom-login"
-                                aria-describedby="emailHelp" placeholder="E-Posta">
+                            <label>E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" placeholder="E-Posta" required>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputPassword1">Şifreniz</label>
-                            <input type="password" class="form-control custom-login"
-                                placeholder="Şifre">
+                            <input type="password" class="form-control custom-login" aria-describedby="pwHelp"
+                                placeholder="Şifre" required>
                         </div>
                         <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
                             SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
                         <button type="submit" class="btn btn-koop w-100 mt-3">Giriş Yap</button>
-                        <small id="emailHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz? &nbsp; <a onclick="bridge()" href="#">Buradan</a> bize katılın.</small>
+                        <small id="pwHelp" class="form-text text-muted mt-3">Kamu-İş Kooperatifi üyesi değil misiniz?
+                            &nbsp; <a onclick="bridge()" href="#">Buradan</a> bize katılın.</small>
                     </form>
                 </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- LOGIN PANEL END -->
 
     <!-- REGISTER PANEL START -->
     <div class="reg1ster" id="reg1ster">
         <div class="closeBtn">
-            <button onclick="closeRegister()" type="button" class="btn btn-disClose"><i class="fas fa-times"></i></button>
+            <button onclick="closeRegister()" type="button" class="btn btn-disClose"><i
+                    class="fas fa-times"></i></button>
         </div>
         <div class="container">
             <div class="row vh-100 align-content-center align-items-center">
                 <div class="col-md-12 mx-auto mb-5 text-center">
                     <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
-                </div> 
+                </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Adınız Soyadınız</label>
-                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad">
+                            <label>Adınız Soyadınız</label>
+                            <input type="text" class="form-control custom-login" placeholder="Ad Soyad" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">E-Posta Adresiniz</label>
-                            <input type="email" class="form-control custom-login"
-                                aria-describedby="emailHelp" placeholder="E-Posta">
+                            <label>E-Posta Adresiniz</label>
+                            <input type="email" class="form-control custom-login" placeholder="E-Posta" required>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputPassword1">Şifreniz</label>
-                            <input type="password" class="form-control custom-login"
-                                placeholder="Şifre">
+                            <label>Şifreniz</label>
+                            <input type="password" class="form-control custom-login" aria-describedby="pwHelp"
+                                placeholder="Şifre" required>
                         </div>
-                        <small id="emailHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
+                        <small id="pwHelp" class="form-text text-muted">Tüm bilgileriniz Kamu-İş Kalkınma Kooperatifi
                             SHA-256 kriptolama yazılımı altında korunmaktadır.</small>
                         <button type="submit" class="btn btn-koop w-100 mt-3">Üye ol</button>
-                        <small id="emailHelp" class="form-text text-muted mt-3">Zaten bir Kamu-İş Kooperatifi hesabınız var mı?&nbsp; <a onclick="bridge()" href="#">Buradan</a> giriş yapın.</small>
+                        <small id="emailHelp" class="form-text text-muted mt-3">Zaten bir Kamu-İş Kooperatifi hesabınız
+                            var mı?&nbsp; <a onclick="bridge()" href="#">Buradan</a> giriş yapın.</small>
                     </form>
                 </div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- REGISTER PANEL END -->
 
@@ -123,7 +124,7 @@
                         <div class="cont pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3 d-none d-xl-block d-lg-block d-md-block">
                             <a href="mailto:info@kamuis.org" class="mr-2"><i
                                     class="fas fa-envelope mr-2"></i>info@kamuis.org</a>
-                            <a><i class="fas fa-phone-alt mr-2"></i>0(392) 227 02 24</a>
+                            <a><i class="fas fa-phone-alt mr-2"></i>0 (392) 227 02 24</a>
                         </div>
                         <div class="log pb-1 pb-xl-0 pb-lg-0 pb-md-0 pt-3">
                             <a href="#" class="mr-2"><i class="fas fa-university mr-2"></i>İnternet Bankacılığı</a>
@@ -139,7 +140,7 @@
             <nav class="navbar navbar-expand-lg navbar-light" id="navReset">
                 <div class="col-xl-1 col-lg-1"></div>
                 <a class="navbar-brand" href="#">
-                    <img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
+                    <a href="/index.html"><img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
                 <button onclick="koopToggler(this)" id="koop_onOff" value="undefined" class="navbar-toggler"
                     type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -151,19 +152,19 @@
                     <hr>
                     <ul class="navbar-nav ml-auto text-xl-left text-lg-left text-center">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Bireysel Bankacılık
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Bireysel Bankacılık<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Krediler</a></li>
-                                <li><a class="dropdown-item" href="#">Mevduat & Kredi</a></li>
-                                <li><a class="dropdown-item" href="#">ATM'ler</a></li>
-                                <li><a class="dropdown-item" href="#">Sigorta</a></li>
+                                <li><a class="dropdown-item" href="/listed~credit~brief~page.html">Krediler</a></li>
+                                <li><a class="dropdown-item" href="/listed~credit~brief~page.html">Mevduat & Kredi</a></li>
+                                <li><a class="dropdown-item" href="/atm~location~other.html">ATM'ler</a></li>
+                                <li><a class="dropdown-item" href="/nolisted~brief~page copy.html">Sigorta</a></li>
                                 <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item list-2" onclick="showSubItems()">Fatura Ödemeleri</a></li>
                                 <div class="dropdown-divider d-none lister"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="#">KIB-TEK</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="/dropdown~in~dropdown~nolisted~brief~page.html">KIB-TEK</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Belediyeler</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Digiturk</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">KKTCELL</a></li>
@@ -171,37 +172,38 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Hakkımızda
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                Hakkımızda<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
+                                <li><a class="dropdown-item" href="/noattach~noimg~singlepage.html">Tarihçe</a></li>
                                 <li><a class="dropdown-item" href="#">İlkelerimiz</a></li>
                                 <li><a class="dropdown-item" href="#">Şubelerimiz</a></li>
                                 <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item list-2" onclick="showSubItems()">Yönetim</a></li>
                                 <div class="dropdown-divider lister d-none"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="#">Başkanın Mesajı</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="/attach~img~inpage.html">Başkanın Mesajı</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Yönetim Kurulu</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Kurumsal Kimlik</a></li>
-                                <li><a class="dropdown-item" href="#">Mali Raporlar</a></li>
+                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Kurumsal Kimlik</a></li>
+                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Mali Raporlar</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span><i
+                                    class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Kredi Ön Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="#">Debit Kart Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="#">Üyelik Formu</a></li>
+                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Kredi Ön Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Debit Kart Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Üyelik Formu</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">İletişim</a>
+                            <a class="nav-link" href="/contact.html">İletişim</a>
                         </li>
                     </ul>
                 </div>
@@ -359,8 +361,8 @@
                         </div>
                         <div class="form-group">
                             <label>Kredi Tutarı<span class="ml-1" style="color: red;">*</span></label>
-                            <input type="credit-bounce" class="form-control"
-                                placeholder="Kredi Tutarı (Gereklidir)" required>
+                            <input type="credit-bounce" class="form-control" placeholder="Kredi Tutarı (Gereklidir)"
+                                required>
                         </div>
                         <div class="d-flex justify-content-between">
                             <button type="button" class="btn btn-calc">Hesapla</button>
@@ -412,8 +414,8 @@
                         </div>
                         <div class="form-group">
                             <label>Ana Para<span class="ml-1" style="color: red;">*</span></label>
-                            <input type="credit-bounce" class="form-control"
-                                placeholder="Ana Para (Gereklidir)" required>
+                            <input type="credit-bounce" class="form-control" placeholder="Ana Para (Gereklidir)"
+                                required>
                         </div>
                         <div class="d-flex justify-content-between">
                             <button type="button" class="btn btn-calc">Hesapla</button>
