@@ -4,27 +4,31 @@
 <head>
     <title>Kamu - İş Kalkınma Kooperatifi Ltd. Şti.</title>
 
-    <meta name="robots" content="noindex, nofollow" />
-
     <!-- arg0 meta tags -->
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex">
+    <!-- NO INDEX ETİKETİ İÇ SAYFALARDA DA MEVCUTTUR KURULUM ÖNCESİ YA DA SONRASI KALDIRILMALIDIR. -->
+    <meta name="robots" content="noindex, nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <!-- 150 Karakterden oluşan birtakım anahtar kelimeleri içerisinde barındıran bir açıklama yazısı eklenmelidir. -->
     <meta name="description" content="Lorem ipsum dolor sit amet">
     <meta name="author" content="Barış Albayrak">
     <meta name="theme-color" content="#1C9754">
     <meta name="copyright" content="arg0dev">
+    <!-- Content-Lang // Sayfa duplicate edilecekse duplicate edilen sayfa üzerinde "en" olarak ayarlanmalıdır. -->
     <meta http-equiv="content-language" content="tr">
-    <link href='./assets/materials/opengraph/iskoop-fav.ico' rel='icon' type='image/x-icon' />
-
+    <link href='./assets/materials/opengraph/iskoop-r-fav.png' rel='icon' type='image/x-icon' />
 
     <!-- arg0 OpenGraph tags -->
     <meta content='website' property='og:type' />
     <meta content='Kamu - İş Kalkınma Kooperatifi Ltd. Şti.' property='og:title' />
     <meta content='Kamu - İş Kalkınma Kooperatifi Ltd. Şti.' property='og:site_name' />
+    <!-- 150 Karakterden oluşan birtakım anahtar kelimeleri içerisinde barındıran bir açıklama yazısı eklenmelidir. -->
     <meta content='Lorem ipsum dolor sit amet.' property='og:description' />
+    <!-- Kurulum sonrası sayfanın barındırılacağı domain adresini belirtiniz.  -->
     <meta content='DOMAIN GİRİLECEK' property='og:url' />
-    <meta content='./assets/materials/opengraph/' property='og:image' />
+    <!-- BU VE İÇ SAYFALARDA VERİLEN OG:IMAGE BAĞLANTILARI KURULUM SONRASI DIRECT LINK OLARAK REVİZE EDİLMELİDİR.-->
+    <!-- ÖRN: HTTPS://kamuiskoop.org/assets/materials/opengraph/iskoop-r-og.jpg/-->
+    <meta content='./assets/materials/opengraph/iskoop-r-og.jpg' property='og:image' />
     <link href='./assets/materials/opengraph/iskoop-180.png' rel='apple-touch-icon' sizes='180x180' />
     <link href='./assets/materials/opengraph/iskoop-192.png' rel='icon' sizes='192x192' type='image/png' />
     <link href='./assets/materials/opengraph/iskoop-32.png' rel='icon' sizes='32x32' type='image/png' />
@@ -51,7 +55,7 @@
         <div class="container">
             <div class="row vh-100 align-content-center align-items-center">
                 <div class="col-md-12 mx-auto mb-5 text-center">
-                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                    <img src="./assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
@@ -85,7 +89,7 @@
         <div class="container">
             <div class="row vh-100 align-content-center align-items-center">
                 <div class="col-md-12 mx-auto mb-5 text-center">
-                    <img src="/assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
+                    <img src="./assets/materials/svg/logo-ct.svg" width="350" class="img-fluid">
                 </div>
                 <div class="col-xl-5 col-lg-5 col-md-6 mx-auto mt-3">
                     <form>
@@ -130,7 +134,7 @@
                             <a href="#" class="mr-2"><i class="fas fa-university mr-2"></i>İnternet Bankacılığı</a>
                             <a onclick="reg1ster()" class="mr-2"><i class="fas fa-user-plus mr-2"></i>Üye Ol</a>
                             <a onclick="log1n()" class="mr-2"><i class="fas fa-sign-in-alt mr-2"></i>Giriş Yap</a>
-                            <a href="#"><img src="/assets/materials/jpg/lang/en_GB.png" width="24"></a>
+                            <a href="#"><img src="./assets/materials/jpg/lang/en_GB.png" width="24"></a>
                         </div>
                     </div>
                 </div>
@@ -139,8 +143,8 @@
             <hr>
             <nav class="navbar navbar-expand-lg navbar-light" id="navReset">
                 <div class="col-xl-1 col-lg-1"></div>
-                <a class="navbar-brand" href="#">
-                    <a href="/index.html"><img src="/assets/materials/svg/logo-wt.svg" width="100%"></a>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/materials/svg/logo-wt.svg"
+                        width="100%"></a>
                 <button onclick="koopToggler(this)" id="koop_onOff" value="undefined" class="navbar-toggler"
                     type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -157,14 +161,16 @@
                                 Bireysel Bankacılık<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/listed~credit~brief~page.html">Krediler</a></li>
-                                <li><a class="dropdown-item" href="/listed~credit~brief~page.html">Mevduat & Kredi</a></li>
-                                <li><a class="dropdown-item" href="/atm~location~other.html">ATM'ler</a></li>
-                                <li><a class="dropdown-item" href="/nolisted~brief~page copy.html">Sigorta</a></li>
+                                <li><a class="dropdown-item" href="./listed~credit~brief~page.html">Krediler</a></li>
+                                <li><a class="dropdown-item" href="./listed~credit~brief~page.html">Mevduat & Kredi</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./atm~location~other.html">ATM'ler</a></li>
+                                <li><a class="dropdown-item" href="./noforward~brief~page.html">Sigorta</a></li>
                                 <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item list-2" onclick="showSubItems()">Fatura Ödemeleri</a></li>
                                 <div class="dropdown-divider d-none lister"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="/dropdown~in~dropdown~nolisted~brief~page.html">KIB-TEK</a></li>
+                                <li><a class="dropdown-item lister d-none sub"
+                                        href="./dropdown~in~dropdown~nolisted~brief~page.html">KIB-TEK</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Belediyeler</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Digiturk</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">KKTCELL</a></li>
@@ -177,17 +183,20 @@
                                 Hakkımızda<i class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/noattach~noimg~singlepage.html">Tarihçe</a></li>
+                                <li><a class="dropdown-item" href="./noattach~noimg~singlepage.html">Tarihçe</a></li>
                                 <li><a class="dropdown-item" href="#">İlkelerimiz</a></li>
                                 <li><a class="dropdown-item" href="#">Şubelerimiz</a></li>
                                 <div class="dropdown-divider"></div>
                                 <li><a class="dropdown-item list-2" onclick="showSubItems()">Yönetim</a></li>
                                 <div class="dropdown-divider lister d-none"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="/attach~img~inpage.html">Başkanın Mesajı</a></li>
+                                <li><a class="dropdown-item lister d-none sub" href="./attach~img~inpage.html">Başkanın
+                                        Mesajı</a></li>
                                 <li><a class="dropdown-item lister d-none sub" href="#">Yönetim Kurulu</a></li>
                                 <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Kurumsal Kimlik</a></li>
-                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Mali Raporlar</a></li>
+                                <li><a class="dropdown-item" href="./attach~noimg~onlineforms.html">Kurumsal Kimlik</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./attach~noimg~onlineforms.html">Mali Raporlar</a>
+                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -197,13 +206,15 @@
                                     class="fas fa-angle-down ml-2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Kredi Ön Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Debit Kart Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="/attach~noimg~onlineforms.html">Üyelik Formu</a></li>
+                                <li><a class="dropdown-item" href="./attach~noimg~onlineforms.html">Kredi Ön
+                                        Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="./attach~noimg~onlineforms.html">Debit Kart
+                                        Başvurusu</a></li>
+                                <li><a class="dropdown-item" href="./attach~noimg~onlineforms.html">Üyelik Formu</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/contact.html">İletişim</a>
+                            <a class="nav-link" href="./contact.html">İletişim</a>
                         </li>
                     </ul>
                 </div>
@@ -283,7 +294,7 @@
                     <a onclick="ShowCredit()">
                         <div id="Sec0"
                             class="inclusive mt-3 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
-                            <img src="/assets/materials/svg/purse.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
+                            <img src="./assets/materials/svg/purse.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
                             <span class="ml-xl-4 ml-lg-4 my-auto">
                                 <h3>Kredi Hesaplama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </span>
@@ -293,7 +304,7 @@
                     <a onclick="ShowDeposit()">
                         <div id="Sec1"
                             class="inclusive mt-4 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
-                            <img src="/assets/materials/svg/cash-back.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
+                            <img src="./assets/materials/svg/cash-back.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
                             <span class="ml-xl-4 ml-lg-4 my-auto">
                                 <h3>Mevduat Hesaplama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </span>
@@ -303,7 +314,7 @@
                     <a onclick="ShowUban()">
                         <div id="Sec2"
                             class="inclusive mt-4 align-items-center d-xl-flex d-lg-flex text-center text-xl-left text-lg-left">
-                            <img src="/assets/materials/svg/search.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
+                            <img src="./assets/materials/svg/search.svg" width="64" class="mb-4 mb-xl-0 mb-lg-0">
                             <span class="ml-xl-4 ml-lg-4 my-auto">
                                 <h3>UBAN Sorgulama</h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             </span>
@@ -336,21 +347,33 @@
                         </div>
                         <div class="form-group" required>
                             <label>Para Birimi</label><br />
-                            <div class="form-check form-check-inline" name="select3" id="select3">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">TL</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrencyCredit"
+                                    id="koopRadios1" value="option1">
+                                <label class="form-check-label label-koop" for="koopRadios1">
+                                    TRY
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">EUR</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrencyCredit"
+                                    id="koopRadios2" value="option2">
+                                <label class="form-check-label label-koop" for="koopRadios2">
+                                    EUR
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">USD</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrencyCredit"
+                                    id="koopRadios3" value="option3">
+                                <label class="form-check-label label-koop" for="koopRadios3">
+                                    USD
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">GBP</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrencyCredit"
+                                    id="koopRadios4" value="option4">
+                                <label class="form-check-label label-koop" for="koopRadios4">
+                                    GBP
+                                </label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -379,31 +402,49 @@
                         <div class="form-group" required>
                             <label>Kişi Türü</label><br />
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">Gerçek Kişi</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosPerson" id="koopRadios5"
+                                    value="option5">
+                                <label class="form-check-label label-koop" for="koopRadios5">
+                                    Gerçek Kişi
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">Tüzel Kişi</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosPerson" id="koopRadios6"
+                                    value="option6">
+                                <label class="form-check-label label-koop" for="koopRadios6">
+                                    Tüzel Kişi
+                                </label>
                             </div>
                         </div>
                         <div class="form-group" required>
                             <label for="exampleFormControlSelect1">Para Birimi</label><br />
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">TRY</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrency" id="koopRadios7"
+                                    value="option7">
+                                <label class="form-check-label label-koop" for="koopRadios7">
+                                    TRY
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">USD</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrency" id="koopRadios8"
+                                    value="option8">
+                                <label class="form-check-label label-koop" for="koopRadios8">
+                                    EUR
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">GBP</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrency" id="koopRadios9"
+                                    value="option9">
+                                <label class="form-check-label label-koop" for="koopRadios9">
+                                    USD
+                                </label>
                             </div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio">
-                                <label class="form-check-label label-koop">EUR</label>
+                                <input class="form-check-input" type="radio" name="koopRadiosCurrency" id="koopRadios10"
+                                    value="option10">
+                                <label class="form-check-label label-koop" for="koopRadios10">
+                                    GBP
+                                </label>
                             </div>
                         </div>
                         <div class="form-group">
@@ -463,7 +504,7 @@
             <div class="row text-center mt-5 pt-3">
                 <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
                     <div class="card">
-                        <img class="card-img" src="/assets/materials/jpg/building.jpg" alt="Sheep 9">
+                        <img class="card-img" src="./assets/materials/jpg/building.jpg" alt="Sheep 9">
                         <div id="card-img-overlay"
                             class="card-img-overlay text-white d-flex justify-content-center align-items-center overlay-green">
                             <h2 class="my-xl-auto my-lg-auto my-md-3 my-auto press">Konut
@@ -473,7 +514,7 @@
                 </div>
                 <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
                     <div class="card">
-                        <img class="card-img" src="/assets/materials/jpg/needed.jpg" alt="Sheep 9">
+                        <img class="card-img" src="./assets/materials/jpg/needed.jpg" alt="Sheep 9">
                         <div id="card-img-overlay"
                             class="card-img-overlay text-white d-flex justify-content-center align-items-center overlay-green">
                             <h2 class="my-xl-auto my-lg-auto my-md-3 my-auto press">İhtiyaç
@@ -483,7 +524,7 @@
                 </div>
                 <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
                     <div class="card">
-                        <img class="card-img" src="/assets/materials/jpg/car.jpg" alt="Sheep 9">
+                        <img class="card-img" src="./assets/materials/jpg/car.jpg" alt="Sheep 9">
                         <div id="card-img-overlay"
                             class="card-img-overlay text-white d-flex justify-content-center align-items-center overlay-green">
                             <h2 class="my-xl-auto my-lg-auto my-md-3 my-auto press">Taşıt
@@ -493,7 +534,7 @@
                 </div>
                 <div class="col-md-3 mb-xl-0 mb-lg-0 mb-md-0 mb-5">
                     <div class="card">
-                        <img class="card-img" src="/assets/materials/jpg/health.jpg" alt="Sheep 9">
+                        <img class="card-img" src="./assets/materials/jpg/health.jpg" alt="Sheep 9">
                         <div id="card-img-overlay"
                             class="card-img-overlay text-white d-flex justify-content-center align-items-center overlay-green">
                             <h2 class="my-xl-auto my-lg-auto my-md-3 my-auto press">Sağlık
@@ -501,6 +542,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-6 offset-md-6 text-right mt-4">
+                <a href="/credit-sort.html"><span>Daha fazlasını gör<i
+                            class="fas fa-long-arrow-alt-right ml-3 dot"></i></span></a>
             </div>
         </div>
     </section>
@@ -518,8 +563,10 @@
             <div class="container mt-5 slick">
                 <div class="row">
                     <div class="col-md-12 d-flex justify-content-between">
-                        <span id="arg0_swiper--prev"><i class="fas fa-long-arrow-alt-left mr-3 dot"></i>Geri</span>
-                        <span id="arg0_swiper--next">İleri<i class="fas fa-long-arrow-alt-right ml-3 dot"></i></span>
+                        <span id="arg0_swiper--prev" class="dot"><i
+                                class="fas fa-long-arrow-alt-left mr-3 dot"></i>Geri</span>
+                        <span id="arg0_swiper--next" class="dot">İleri<i
+                                class="fas fa-long-arrow-alt-right ml-3 dot"></i></span>
                     </div>
                 </div>
             </div>
@@ -527,7 +574,7 @@
                 <!-- DESKTOP SEC #1-->
                 <div class="item d-flex">
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/business.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/business.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -536,7 +583,7 @@
                         <button type="button" class="btn btn-line w-100">Devamını Görüntüle</button>
                     </div>
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/computer.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/computer.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -545,7 +592,7 @@
                         <button type="button" class="btn btn-line w-100">Devamını Görüntüle</button>
                     </div>
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/security.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/security.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -558,7 +605,7 @@
                 <!-- DESKTOP SEC #2-->
                 <div class="item d-flex">
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/business.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/business.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -567,7 +614,7 @@
                         <button type="button" class="btn btn-line w-100">Devamını Görüntüle</button>
                     </div>
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/computer.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/computer.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -576,7 +623,7 @@
                         <button type="button" class="btn btn-line w-100">Devamını Görüntüle</button>
                     </div>
                     <div class="col-md-4">
-                        <img src="/assets/materials/jpg/security.jpg" class="reSizer">
+                        <img src="./assets/materials/jpg/security.jpg" class="reSizer">
                         <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
                         <hr align="left">
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -592,7 +639,7 @@
             <!-- MOBILE SEC #1-->
             <div class="item d-flex">
                 <div class="col-12">
-                    <img src="/assets/materials/jpg/business.jpg" class="reSizer">
+                    <img src="./assets/materials/jpg/business.jpg" class="reSizer">
                     <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                     <hr align="left">
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -604,7 +651,7 @@
             <!-- MOBILE SEC #2-->
             <div class="item d-flex">
                 <div class="col-12">
-                    <img src="/assets/materials/jpg/computer.jpg" class="reSizer">
+                    <img src="./assets/materials/jpg/computer.jpg" class="reSizer">
                     <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                     <hr align="left">
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -616,7 +663,7 @@
             <!-- MOBILE SEC #3-->
             <div class="item d-flex">
                 <div class="col-12">
-                    <img src="/assets/materials/jpg/security.jpg" class="reSizer">
+                    <img src="./assets/materials/jpg/security.jpg" class="reSizer">
                     <h2 class="mt-4 press">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
                     <hr align="left">
                     <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
@@ -670,10 +717,7 @@
                         <p class="mt-4">Hakkımızda</p>
                     </a>
                     <a href="#" target="blank_">
-                        <p>Mevzuat</p>
-                    </a>
-                    <a href="#" target="blank_">
-                        <p>Haberler</p>
+                        <p>Mevduat</p>
                     </a>
                 </div>
                 <div class="col-md-3 text-center mt-5 mt-xl-0 mt-lg-0 mt-md-0">
@@ -703,7 +747,6 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
-    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 

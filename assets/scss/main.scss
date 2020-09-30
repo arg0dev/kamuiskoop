@@ -56,6 +56,22 @@ $h3: 16px;
     color: $white;  
 }
 
+select {
+    outline: none !important;
+    box-shadow: none !important;
+    &:focus {
+        border-color: $green !important;
+    }
+}
+
+.form-control {
+    outline: none !important;
+    box-shadow: none !important;
+    &:focus {
+        border-color: $green;
+    }
+}
+
 a {
     cursor: pointer;
 }
@@ -200,6 +216,7 @@ input[type=number] {
     opacity: 0.2;
 }
 
+
 iframe {
     width: 100%;
     height: auto;
@@ -302,7 +319,7 @@ body {
 }
 
 .inPage {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/buildCover.jpg') no-repeat top center !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('../materials/jpg/buildCover.jpg') no-repeat top center !important;
     color: white;
     min-height: 75vh !important;
     padding-bottom: 2.5em;
@@ -373,7 +390,7 @@ body {
 header{
     min-height: 100vh;
     color: $white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('/assets/materials/jpg/header.jpg') no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0,0,0,.5)), url('../materials/jpg/header.jpg') no-repeat top center;
     background-size: cover;
     hr {
         background: $white;
@@ -654,8 +671,19 @@ section {
         height: 25%;
         margin-top: auto;
     }
+
+    a {
+        color: $gray;
+        &:hover {
+            color: $green;
+        }
+    }
+
 }
 
+.dot {
+    color: $gray;
+}
 
 .Sec3 {
     img {
@@ -673,10 +701,6 @@ section {
         text-transform: capitalize;
     }
 
-    .dot {
-        color: $gray;
-    }
-
     .slick {
         position: relative;
         span {
@@ -686,7 +710,7 @@ section {
 }
 
 .Sec4 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url('/assets/materials/jpg/buildCover.jpg') no-repeat top center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url('../materials/jpg/buildCover.jpg') no-repeat top center;
     background-size: cover;
     color: $white;
     padding: 10em 0em 10em 0em;

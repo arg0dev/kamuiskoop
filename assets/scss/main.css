@@ -39,6 +39,26 @@
   color: #ffffff;
 }
 
+select {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+select:focus {
+  border-color: #1C9754 !important;
+}
+
+.form-control {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #1C9754;
+}
+
 a {
   cursor: pointer;
 }
@@ -335,8 +355,8 @@ body h3 {
 }
 
 .inPage {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/materials/jpg/buildCover.jpg") no-repeat top center !important;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/materials/jpg/buildCover.jpg") no-repeat top center !important;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../materials/jpg/buildCover.jpg") no-repeat top center !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../materials/jpg/buildCover.jpg") no-repeat top center !important;
   color: white;
   min-height: 75vh !important;
   padding-bottom: 2.5em;
@@ -415,8 +435,8 @@ body h3 {
 header {
   min-height: 100vh;
   color: #ffffff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/assets/materials/jpg/header.jpg") no-repeat top center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/materials/jpg/header.jpg") no-repeat top center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../materials/jpg/header.jpg") no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../materials/jpg/header.jpg") no-repeat top center;
   background-size: cover;
 }
 
@@ -719,6 +739,18 @@ section .CompVisible {
   margin-top: auto;
 }
 
+.Sec2 a {
+  color: #919191;
+}
+
+.Sec2 a:hover {
+  color: #1C9754;
+}
+
+.dot {
+  color: #919191;
+}
+
 .Sec3 img {
   border-radius: 5px;
 }
@@ -735,10 +767,6 @@ section .CompVisible {
   text-transform: capitalize;
 }
 
-.Sec3 .dot {
-  color: #919191;
-}
-
 .Sec3 .slick {
   position: relative;
 }
@@ -748,8 +776,8 @@ section .CompVisible {
 }
 
 .Sec4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(1, 0, 0, 0.5))), url("/assets/materials/jpg/buildCover.jpg") no-repeat top center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url("/assets/materials/jpg/buildCover.jpg") no-repeat top center;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(1, 0, 0, 0.5))), url("../materials/jpg/buildCover.jpg") no-repeat top center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url("../materials/jpg/buildCover.jpg") no-repeat top center;
   background-size: cover;
   color: #ffffff;
   padding: 10em 0em 10em 0em;
