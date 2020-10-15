@@ -178,62 +178,74 @@
                     <hr>
                     <ul class="navbar-nav ml-auto text-xl-left text-lg-left text-center">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 Bireysel Bankacılık<i class="fas fa-angle-down ml-2"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Krediler</a></li>
-                                <li><a class="dropdown-item" href="#">Mevduat & Kredi</a></li>
-                                <li><a class="dropdown-item" href="#">ATM'ler</a></li>
-                                <li><a class="dropdown-item" href="#">Sigorta</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Fatura Ödemeleri</a></li>
-                                <div class="dropdown-divider d-none lister"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="#">KIB-TEK</a></li>
-                                <li><a class="dropdown-item lister d-none sub" href="#">Belediyeler</a></li>
-                                <li><a class="dropdown-item lister d-none sub" href="#">Digiturk</a></li>
-                                <li><a class="dropdown-item lister d-none sub" href="#">KKTCELL</a></li>
-                                <li><a class="dropdown-item lister d-none sub" href="#">KKTC Telsim</a></li>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a tabindex="-1" href="./listed~credit~brief~page.html">Krediler</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./listed~credit~brief~page.html">Mevduat & Kredi</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./atm~location~other.html">ATM'ler</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./noforward~brief~page.html">Sigorta</a></li>
+                                <li class="dropdown-submenu dropdown-item">
+                                    <a class="dropper" tabindex="-1" href="#">Fatura Ödemeleri <i
+                                            class="fas fa-angle-down ml-2"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a tabindex="-1" href="./dropdown~in~dropdown~nolisted~brief~page.html">KIB-TEK</a></li>
+                                        <li class="dropdown-item"><a tabindex="-1" href="#">Belediyeler</a></li>
+                                        <li class="dropdown-item"><a tabindex="-1" href="#">Digiturk</a></li>
+                                        <li class="dropdown-item"><a tabindex="-1" href="#">KKTCELL</a></li>
+                                        <li class="dropdown-item"><a tabindex="-1" href="#">KKTC Telsim</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 Hakkımızda<i class="fas fa-angle-down ml-2"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Tarihçe</a></li>
-                                <li><a class="dropdown-item" href="#">İlkelerimiz</a></li>
-                                <li><a class="dropdown-item" href="#">Şubelerimiz</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item list-2" onclick="showSubItems()">Yönetim</a></li>
-                                <div class="dropdown-divider lister d-none"></div>
-                                <li><a class="dropdown-item lister d-none sub" href="#">Başkanın Mesajı</a></li>
-                                <li><a class="dropdown-item lister d-none sub" href="#">Yönetim Kurulu</a></li>
-                                <div class="dropdown-divider"></div>
-                                <li><a class="dropdown-item" href="#">Kurumsal Kimlik</a></li>
-                                <li><a class="dropdown-item" href="#">Mali Raporlar</a></li>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a tabindex="-1" href="./noattach~noimg~singlepage.html">Tarihçe</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">İlkelerimiz</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="#">Şubelerimiz</a></li>
+                                <li class="dropdown-submenu dropdown-item">
+                                    <a class="dropper" tabindex="-1" href="#">Yönetim <i
+                                            class="fas fa-angle-down ml-2"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a tabindex="-1" href="./attach~img~inpage.html">Başkanın Mesajı</a></li>
+                                        <li class="dropdown-item"><a tabindex="-1" href="#">Yönetim Kurulu</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./attach~noimg~coorparate~identity.html">Kurumsal Kimlik</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./attach~noimg~coorparate~identity.html">Mali Raporlar</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            <a class="nav-link" id="navbarDropdownMenuLink" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 <span lang="en">Online</span>&nbsp;<span lang="tr">Formlar</span><i
-                                    class="fas fa-angle-down ml-2"></i>
+                                class="fas fa-angle-down ml-2"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Kredi Ön Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="#">Debit Kart Başvurusu</a></li>
-                                <li><a class="dropdown-item" href="#">Üyelik Formu</a></li>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a tabindex="-1" href="./attach~noimg~onlineforms.html">Kredi Ön Başvurusu</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./attach~noimg~onlineforms.html">Debit Kart Başvurusu</a></li>
+                                <li class="dropdown-item"><a tabindex="-1" href="./attach~noimg~onlineforms.html">Üyelik Formu</a></li>
                             </ul>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="#">İletişim</a>
+                            <a class="nav-link" href="./contact.html">İletişim</a>
                         </li>
+
                     </ul>
                 </div>
                 <div class="col-xl-1 col-lg-1"></div>
+
+
+
             </nav>
         </div>
         <div class="container">

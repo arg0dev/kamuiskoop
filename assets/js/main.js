@@ -229,18 +229,13 @@ function koop_bridge() {
 }
 
 
-function showSubItems() {
-	event.stopPropagation()
-	if (activeChkDropDown == 0) {
-		$('.lister').removeClass('d-none');
-		activeChkDropDown = 1;
-	}
-	else {
-		$('.lister').addClass('d-none');
-		activeChkDropDown = 0;
-	}
-}
-
+$(document).ready(function(){
+  $('.dropdown-submenu a.dropper').on("click", function(e){
+    $(this).next('ul').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
 
 function flipper(x) {
 	x.classList.toggle("lineT");

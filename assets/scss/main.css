@@ -568,82 +568,54 @@ header .carousel-control-prev, header .carousel-control-next {
   cursor: pointer;
 }
 
-.nav-link {
-  outline: none !important;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important;
-}
-
-.dropdown-menu {
-  padding-right: 35px !important;
-  border-radius: 0px 5px 5px 5px;
-  background: #1c9754;
-  color: #fff !important;
-  border: 0px;
-  -webkit-box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 2px 0px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1.5em;
-  margin-top: 0;
-}
-
-.navbar-light .navbar-nav .show > .nav-link {
-  background: #1c9754;
-  margin-bottom: 0;
-  border-radius: 5px 5px 0px 0px;
-}
-
-.dropdown-toggle::after {
-  display: none;
-}
-
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: .25rem 1.5rem;
-  clear: both;
-  font-weight: 400;
-  color: #ffffff !important;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent !important;
-  border: 0;
-  font-size: 14px;
-}
-
-.dropdown-item:hover {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.dropdown-item:active {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-.dropdown-divider {
-  margin-left: 15px;
-  border-color: #e9ecef2b;
-}
-
 .dropdown-submenu {
   position: relative;
 }
 
-.dropdown-submenu a::after {
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  position: absolute;
-  right: 6px;
-  top: .8em;
-}
-
-.dropdown-submenu .dropdown-menu {
+.dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
-  margin-left: 1rem !important;
-  margin-right: .1rem;
+  background: #157541;
+  margin-top: 5px;
+  margin-left: 0px;
+  border-radius: 0 5px 5px 5px;
+}
+
+.dropdown-submenu:focus > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu:hover > a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 0px 0px;
+}
+
+.dropdown-item {
+  padding: 0.25rem 1em;
+}
+
+.dropdown-item a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background: #1C9754;
+}
+
+.dropdown-menu {
+  background: #1C9754;
+  border: none;
+  font-size: 14px;
 }
 
 main {
@@ -818,9 +790,6 @@ section .CompVisible {
 }
 
 .Sec4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(1, 0, 0, 0.5))), url("../materials/jpg/buildCover.jpg") no-repeat top center;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(1, 0, 0, 0.5)), url("../materials/jpg/buildCover.jpg") no-repeat top center;
-  background-size: cover;
   color: #ffffff;
   padding: 10em 0em 10em 0em;
 }
