@@ -560,6 +560,11 @@ header{
     a {
         color: $white;
         text-decoration: none;
+        outline:none !important;
+        box-shadow:  none !important;
+    }
+    &:focus {
+        background: $darkGreen;
     }
     &:hover {
         background: $green;

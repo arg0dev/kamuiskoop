@@ -606,6 +606,13 @@ header .carousel-control-prev, header .carousel-control-next {
 .dropdown-item a {
   color: #ffffff;
   text-decoration: none;
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.dropdown-item:focus {
+  background: #157541;
 }
 
 .dropdown-item:hover {
